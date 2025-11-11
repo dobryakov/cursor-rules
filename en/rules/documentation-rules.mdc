@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+
+# Documentation and Tools
+
+* After making changes, synchronize the README, quickstart, and other specifications.
+* Add convenient examples using `curl` and shell scripts.
+* Use connected MCP servers (e.g., context7) to search for libraries and utilities.
+* Maintain up-to-date documentation for deploying the project from scratch (including container builds, migrations, launching required utilities, data generation, and similar processes).

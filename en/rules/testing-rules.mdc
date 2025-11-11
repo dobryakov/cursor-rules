@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+
+# Testing Strategy
+
+* After completing each task, run the relevant automated tests, including browser and performance tests whenever possible.
+* Choose the environment according to the type of tests: unit tests inside the service container, API and e2e tests in separate test containers.
+* Connect test containers to the main `docker-compose.yml`.
+* Before starting tests, check if the test container needs to be rebuilt and migrations applied.
+* If the project includes an SDK or software clients, they must be covered by separate tests.

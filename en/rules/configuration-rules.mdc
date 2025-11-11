@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+# Configuration and Migrations
+
+* Do not hardcode variables — move them to `.env` and provide a sample in `env.example`. When new variables are added, request that they be added manually.
+* Always assume non-standard service ports (not 80, not 8080, not 443). Do not hardcode ports — make configurations explicit.
+* Write reversible migrations whenever possible; for irreversible ones, request approval in advance.

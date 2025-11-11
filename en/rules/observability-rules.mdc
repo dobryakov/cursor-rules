@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+# Observability and Diagnostics
+
+* Use all available logs (scripts, automated tests, proxies, browser console, docker-compose) to identify the causes of errors.
+* Add diagnostic output and trace IDs to track the request flow through logs.
+* Implement health checks for key functions that are suitable for monitoring.

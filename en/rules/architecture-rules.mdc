@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+# Architecture and Integrations
+
+* If the project includes both frontend and backend, the frontend container serves browser requests and proxies them to the backend.
+* If the project includes SDKs or programmatic clients, verify that their APIs remain up to date whenever services change.
+* When modifying services, validate API contracts and assess the impact on related components.

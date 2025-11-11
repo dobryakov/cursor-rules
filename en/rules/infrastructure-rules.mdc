@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+---
+
+# Infrastructure and Containers
+
+* Work only on a remote server.
+* Deploy services in Docker and manage them via `docker-compose.yml`.
+* Whenever possible, run commands inside containers — do not execute them on the host (exceptions: `docker`, `compose`, `curl`, `sh`, ask for additions).
+* When possible, reuse base images across different containers.
+* After making changes, evaluate whether a container rebuild (`build`) is required instead of just a restart (`run`).
+* If the project includes periodic tasks (cron jobs), document them (with ready-to-use `crontab` syntax) for manual execution, and, if possible, automate them within a dedicated `scheduler` container.
