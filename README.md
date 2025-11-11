@@ -14,8 +14,10 @@ By embedding rules into your project:
 
 ## ✅ Getting started
 1. Clone this repository (or add it as a submodule) into your project’s `.cursor/rules` directory:
-   git clone https://github.com/dobryakov/cursor-rules.git .cursor/rules
-   (or make a symlink)
+   ```bash
+   git clone https://github.com/dobryakov/cursor-rules.git /anywhere/you/want
+   ```
+   then make a symlink.
 
 2. Make sure your project structure and rule-paths align with how your Cursor environment expects rules to be found.
 
@@ -49,3 +51,4 @@ Contributions are welcome! Here’s how you can help:
 - Add a new `.mdc` file (or update an existing one) with clear description, scope, and examples.
 - Ensure your changes align with the existing naming and structuring conventions.
 - Submit a pull request with a meaningful commit message describing the rule’s purpose or modification.
+
