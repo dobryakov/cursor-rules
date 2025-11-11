@@ -9,7 +9,7 @@
 ### Principle II. Containerization and Open Infrastructure
 - All services, clients, test runners, and auxiliary tools are deployed via `docker-compose.yml`; no mandatory dependencies are required on the host machine.
 - By default, no interpreters (Python, Node.js, PHP, Ruby, etc.) are expected to be installed on the host; if scripts need to run, the interpreters are executed inside corresponding containers without host installation.
-- Only open-source solutions are used for computation, data storage, queues, feature store, and ML life-cycle (e.g., FastAPI/Express, PostgreSQL, Redis, Feast, MLflow, Prefect).
+- Only open-source solutions are used for computation, data storage, queues, feature store, and ML life-cycle.
 - Tests and client SDKs (JS, PHP, shell) are placed in separate containers and can be executed independently.
 
 ### Principle III. Observability and Diagnosability
@@ -45,4 +45,5 @@
 ## Governance
 - The Constitution has the highest authority: architectural decisions, project plans, and code reviews are all verified for compliance with its principles.
 - Every significant service change must include verification of plans, specifications, and task lists for adherence to the principles and technological standards.
+
 
