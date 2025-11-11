@@ -2,7 +2,7 @@
 
 ## Core Principles
 
-### Principle I. Product-Oriented ML Microservice Architecture
+### Principle I. Product-Oriented Microservice Architecture
 - Each service is implemented as a set of independent, containerized components: public HTTP API, asynchronous computation workers, data preparation pipelines, ML infrastructure, and others.
 - All APIs comply with REST, support idempotency, return proper HTTP status codes, and provide extensible contract schemas.
 
@@ -45,3 +45,4 @@
 ## Governance
 - The Constitution has the highest authority: architectural decisions, project plans, and code reviews are all verified for compliance with its principles.
 - Every significant service change must include verification of plans, specifications, and task lists for adherence to the principles and technological standards.
+
