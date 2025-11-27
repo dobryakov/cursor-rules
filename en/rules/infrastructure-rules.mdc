@@ -6,6 +6,8 @@ alwaysApply: true
 
 * Work only on a remote server.
 * Deploy services in Docker and manage them via `docker-compose.yml`.
+* MUST use Docker Compose V2 (`docker compose`) instead of V1 (`docker-compose`). V1 is incompatible with newer Docker versions and causes `ContainerConfig` KeyError. Always use `docker compose` command (space, not hyphen).
+* Do not include `version:` field in `docker-compose.yml` — Docker Compose V2 does not require it and will show a warning if present.
 * Whenever possible, run commands inside containers — do not execute them on the host (exceptions: `docker`, `compose`, `curl`, `sh`, ask for additions).
 * When possible, reuse base images across different containers.
 * After making changes, evaluate whether a container rebuild (`build`) is required instead of just a restart (`run`).

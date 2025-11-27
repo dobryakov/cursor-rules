@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+
+# Dependencies Strategy
+
+* After adding, removing, or changing the version of any dependency (including package.json, requirements.txt, pom.xml, etc.), it is required to immediately run at least one relevant test (unit, integration, or e2e) to ensure the updated dependency set builds successfully and functions correctly within the project environment before proceeding with further work or making a commit.

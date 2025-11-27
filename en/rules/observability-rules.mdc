@@ -7,3 +7,5 @@ alwaysApply: true
 * Use all available logs (scripts, automated tests, proxies, browser console, docker-compose) to identify the causes of errors.
 * Add diagnostic output and trace IDs to track the request flow through logs.
 * Implement health checks for key functions that are suitable for monitoring.
+* If the project contains health checks based on curl, make sure curl is included into docker image.
+* Always log incoming and outgoing HTTP requests and messages (including full body content or at least major attributes).

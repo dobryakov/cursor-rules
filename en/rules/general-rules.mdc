@@ -5,3 +5,4 @@ alwaysApply: true
 # General Rules
 
 * Always explicitly ask and clarify if any rules seem ambiguous or contradictory.
+* Use mcp context7 to check the documentation. Use the `date +%Y-%m-%d` command (if possible) to get the docs according the actual date.
