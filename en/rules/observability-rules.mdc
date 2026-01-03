@@ -9,3 +9,4 @@ alwaysApply: true
 * Implement health checks for key functions that are suitable for monitoring.
 * If the project contains health checks based on curl, make sure curl is included into docker image.
 * Always log incoming and outgoing HTTP requests and messages (including full body content or at least major attributes).
+* For python use `structlog.dev.ConsoleRenderer()` for structured logging to ensure consistent colored console output across all services for better readability during development and debugging.

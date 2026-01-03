@@ -6,10 +6,13 @@ alwaysApply: true
 
 * Do not run tests on the host! Run tests inside docker containers.
 * After completing each task, run the relevant automated tests, including browser and performance tests whenever possible.
-* Choose the environment according to the type of tests: unit tests inside the service container, API and e2e tests in separate test containers.
+* Choose the environment according to the type of tests: put unit tests inside the service container, put API and e2e tests in separate test containers. Make sure to add the tests dir to the image.
 * Connect test containers to the main `docker-compose.yml`.
 * Before starting tests, check if the test container needs to be rebuilt and migrations applied.
 * If the project includes an SDK or software clients, they must be covered by separate tests.
 * If using Playwright, make sure you have browsers installed to the test container.
 * If using Playwright, consider to use proper "FROM" image (for example, debian-based node.js image) in the Dockerfile before building test container.
 * When calling `docker compose logs` with `tail`, use proper syntax: `docker compose logs --tail 10 <container name>`.
+* It is recommended to include tests dir to the container as `volumes` in docker-compose.yml to re-run the tests without re-building the image.
+* Always try first to debug the errors/warnings by running the corresponding tests. Add the tests if its needed.
+* After fixing every bug, write tests to cover it, and run them.

@@ -12,3 +12,6 @@ alwaysApply: true
 * When possible, reuse base images across different containers.
 * After making changes, evaluate whether a container rebuild (`build`) is required instead of just a restart (`run`).
 * If the project includes periodic tasks (cron jobs), document them (with ready-to-use `crontab` syntax) for manual execution, and, if possible, automate them within a dedicated `scheduler` container.
+* Making the project plan or tasks list, make sure you use database migrations.
+* Do not add `Dockerfile` to the `.dockerignore`.
+* If the `.env` configuration was changed OR environment variables in `docker-compose.yml` was changed, run `docker compose up -d --force-recreate --no-deps` instead of `restart`.
